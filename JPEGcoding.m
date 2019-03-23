@@ -47,23 +47,23 @@ fprintf('The Calculated MSE is %f\n', mse_error);
 figure
 subplot(2,3,1);
 imshow(uint8(raw_img));
-title('原始图');
+title('Raw Image');
 
 subplot(2,3,2);
 imshow(uint8(info));
-title('分块DCT变换图');
+title('DCT Image');
 
 subplot(2,3,3);
 imshow(uint8(quan_info));
-title('量化图');
+title('Quantification Image');
 
 subplot(2,3,4);
 imshow(uint8(re_quan_info));
-title('反量化图');
+title('Reverse Quantification Image');
 
 subplot(2,3,5);
 imshow(uint8(output_img));
-title('DCT反变换恢復图');
+title('Restored Image');
 
 subplot(2,3,6);
 x = 1: width;
